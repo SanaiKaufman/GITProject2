@@ -1,0 +1,356 @@
+/*Fonts
+.protest-strike-regular {
+  font-family: "Protest Strike", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 100 to 900
+
+.noto-sans jp-<uniquifier> {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+body{
+    width: 100%;
+    height: 100%;
+}
+
+/*Nav Bar*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a {
+      color: orange;
+      text-decoration: none;
+  }
+  .logo {
+    display: flex;
+      margin: 0;
+      font-size: 1.45em;
+      font-family: "Protest Strike", sans-serif;
+  }
+  .main-nav {
+      margin-top: 5px;
+      font-family: 'Russo One', sans-serif;
+  }
+  .logo a,
+  .main-nav a {
+      padding: 10px 15px;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+  }
+  .main-nav a {
+      color: #ffffff;
+      font-size: .99em;
+  }
+  .main-nav a:hover {
+      color: #D9D6BA;
+  }
+  .header {
+      padding-top: .5vw;
+      padding-bottom: .5em;
+      background-color: black;
+      box-shadow: 0px 0px 10px 0px rgba(255, 68, 51,0.75);   
+      display: flex;
+      align-items:flex-end;
+  }
+
+/* Page Navigation */
+.navbar {
+    background-color: #CCCCCC;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    padding: 14px 20px; 
+}
+
+.navbar a {
+    color: black;
+    text-align: center;
+    padding: 20px 30px; 
+    text-decoration: none;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.pHover:hover a {
+    background-color: orange;
+    color: white;
+}
+
+#activeTab {
+    background-color: orange;
+    color: white;
+}
+  
+  /*Page Titles*/
+.pages {
+    position: relative; 
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pages::before {    
+      content: "";
+      background-image: url('https://img.freepik.com/free-photo/abstract-textured-backgound_1258-30450.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.87;
+}
+.home {
+    position: relative; 
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home::before {    
+      content: "";
+      background-image: url('https://wallpapercave.com/wp/wp6074619.png');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.87;
+}
+
+
+h1 {
+  position: relative;
+  color: #ffffff;  
+  font-size: 1vh;
+  line-height: 0.9;
+  text-align: center;
+  font-family: "Protest Strike", sans-serif;
+  filter: drop-shadow(10px 10px 10px #000);
+}
+
+h2{
+    font-family: "Protest Strike", sans-serif;
+    font-size: 4vw;
+    text-align: center;
+    color: orange;
+}
+h3{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    font-size: 3vw;
+    color: black;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+p{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 300;
+    font-size: 2.5vw;
+    margin-left: 20px;
+}
+  /*possible images*/
+  .imageContainer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: auto; 
+    overflow: hidden;
+  }
+  
+  .landscapeImage {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  }
+
+.adj{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.adjTop{
+    margin-top: 20px;
+}
+
+/*Footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icons img {
+    width: 30px; 
+    height: 30px;
+  }
+
+@media only screen and (max-width: 769px) {
+
+  .header,
+  .main-nav {
+    display: flex;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  #nametext{
+    margin: 0%;
+    padding: 0%;
+  }
+
+}
+@media only screen and (min-width: 769px) {
+h1 {
+    font-size: 10vw;
+  }
+}
+
+/*New Code*/
+code {
+    display: block;
+    font-family: 'Courier New', monospace;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    overflow-x: auto;
+  }
+  pre {
+    display: inline;
+    font-family: 'Courier New', monospace;
+    padding: 5px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+  }
+
+  /*Home Page Code*/
+  .right,.left{
+    width:25%;
+    padding:2%;
+    background-image: linear-gradient(#FFC150, orange);
+    color: white;
+}
+#centering{
+    text-align: center;
+}
+.middle{
+    width:50%;
+    padding:2%;
+    text-align: center;
+    background-color: #fff;
+}
+.side-menu-container {
+    width: auto;
+    height: auto;
+    color: #fff;
+    position: relative;
+    overflow-y: auto; 
+    padding-top: 20px; 
+    box-sizing: border-box;
+}
+.side-menu-item {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s ease;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+}
+
+.side-menu-item:hover {
+    background-color: #000; 
+    color: orange;
+}
+section{
+    display:flex;
+    width:100%;
+    float:left;
+}
+#description{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+}
+#sideTitles{
+    font-family: "Protest Strike", sans-serif;
+    font-size: 2.5vw;
+    margin-bottom: 2px;
+    color: #000;
+}
+#name{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+    color: #000;
+}
+.hand{
+    width: 60%;
+    height: auto;
+    border-radius: 100%;
+}
+
+/*Footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #foot {
+    margin: 0;
+    font-size: 2vh;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icons img {
+    width: 30px; 
+    height: 30px;
+  }
+
+.modalHeader{
+  padding-top:10px
+}
